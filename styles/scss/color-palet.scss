@@ -1,0 +1,92 @@
+.form-page-card {
+  border: 0;
+  padding: 40px 40px 10px;
+  margin-bottom: 40px;
+
+  @include mobile-lg {
+    padding: 20px 20px 5px;
+  }
+}
+
+.row-sm {
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -30px;
+
+  & > [class*='col'] {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .card {
+    margin-bottom: 30px;
+  }
+}
+
+.palet-heading {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: bold;
+  font-family: $primary-font;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #57616a;
+  margin-bottom: 16px;
+}
+
+.custom-card {
+  margin-bottom: 20px;
+  border: 0;
+  box-shadow: 0 0.5rem 1rem rgba(162, 169, 204, 0.15);
+
+  .card-header {
+    padding: 20px;
+    border-radius: 11px 11px 0 0;
+  }
+
+  .example {
+    padding: 30px;
+    border-bottom: 1px solid #f0f2f8;
+    font-size: 14px;
+    line-height: 1.66;
+
+    &:last-child {
+      border: 0;
+    }
+  }
+}
+
+.color-box {
+  border: 0;
+  box-shadow: 0 0.5rem 1rem rgba(162, 169, 204, 0.15);
+  margin: 0;
+
+  .card-header {
+    padding: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+
+    p {
+      color: white;
+    }
+  }
+
+  h6 {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+
+    span {
+      display: block;
+    }
+  }
+
+  p {
+    line-height: 18px;
+  }
+}

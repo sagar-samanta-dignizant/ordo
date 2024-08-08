@@ -1,0 +1,130 @@
+.price-check-green {
+  input[type='checkbox'] + label {
+    padding: 0 0 0 24px !important;
+  }
+  input[type='checkbox'] + label:before {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: transparent !important;
+    border: 2px solid $border-color;
+  }
+  input[type='checkbox'] + label:after {
+    content: '';
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    width: 12px;
+    height: 10px;
+    background: url(/assets/images/checkbox-tick.svg) no-repeat center/contain;
+  }
+  input[type='checkbox']:checked + label:before {
+    background: $green-color !important;
+    border-color: $green-color;
+  }
+}
+
+.order-items-card {
+  // border-radius: 10px;
+  // border: 1px solid $border-color;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: $light-grey;
+}
+
+.order-items-menu {
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px 16px 10px 10px;
+  // border: 1px solid $border-color;
+  .info-gap {
+    gap: 2px;
+  }
+  figure {
+    img {
+      border-radius: 8px;
+      // max-width: 100%;
+      // max-height: 100%;
+    }
+  }
+  h5 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    // letter-spacing: -.24px;
+  }
+  p {
+    // letter-spacing: -.24px;
+    color: #67635f;
+  }
+}
+
+.waiter-tip-card {
+  h3 {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    margin-bottom: 12px;
+  }
+  .waiter-payment {
+    border-radius: 10px;
+    padding: 16px;
+    background-color: white;
+    .payment-buttons {
+      display: flex;
+      justify-content: space-between;
+      .tip-button {
+        height: 34px;
+        line-height: 32px;
+        padding: 0 20px;
+      }
+    }
+    input[type='radio'] + label {
+      &::before {
+        border: none;
+      }
+      &:last-child {
+        margin-right: 0 !important;
+      }
+    }
+    // input[type=radio]:checked+label {
+    //     color: white !important;
+    //     background-color: $primary-green;
+    // }
+    .custom-payment {
+      display: none;
+      justify-content: space-between;
+      gap: 12px;
+      .btn-save {
+        line-height: 46px;
+        border: none;
+        font-size: 14px;
+        background: $content-color;
+        letter-spacing: 0.01em;
+        &:hover {
+          background: $primary-green;
+        }
+      }
+    }
+    .tip-payment-alert {
+      background-color: #f0faf7;
+      color: $secondary-dark-grey;
+    }
+  }
+}
+
+.pay-option {
+  padding-right: 16px;
+  background-image: url(/assets/images/payment-summary/payment-method-arrow.svg) !important;
+  background-position: right center !important;
+  background-repeat: no-repeat;
+
+  span {
+    color: black;
+  }
+}
+
+.btn-save-sm {
+  height: 40px;
+  line-height: 40px !important;
+}

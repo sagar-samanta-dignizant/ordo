@@ -1,0 +1,81 @@
+.transaction-date-heading {
+  display: flex;
+  justify-content: space-between;
+
+  span {
+    line-height: 16px;
+    letter-spacing: 2.8px;
+    color: $content-color-light;
+  }
+
+  p {
+    color: $content-color-light;
+  }
+}
+
+.transaction-item {
+  padding: 18px 0px;
+  border-bottom: 1px solid $border-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &:nth-last-child(1) {
+    border: none;
+  }
+  p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.25px;
+    color: $content-color-light;
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+.transaction-credit-circle {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.light-green-transaction-circle {
+  background-color: rgba($color: $green-color, $alpha: 0.1);
+}
+.red-transaction-circle {
+  background-color: rgba($color: $alert-red, $alpha: 0.06);
+}
+
+.transaction-content {
+  margin-right: auto;
+  margin-left: 12px;
+  h5 {
+    margin-bottom: 5px;
+    line-height: 26px;
+    letter-spacing: 0.37px;
+  }
+}
+
+.transaction-price {
+  text-align: right;
+
+  h6 {
+    color: $green-color;
+    margin-bottom: 0px;
+  }
+
+  p {
+    text-transform: uppercase;
+  }
+}
+
+.transaction-debit {
+  .transaction-price {
+    h6 {
+      color: $alert-red;
+    }
+  }
+}

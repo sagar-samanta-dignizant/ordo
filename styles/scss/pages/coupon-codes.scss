@@ -1,0 +1,62 @@
+.enter-discount {
+  display: flex;
+  gap: 16px;
+
+  input[type='text'] {
+    height: 36px;
+    background-color: white;
+
+    &:focus {
+      background-color: white !important;
+    }
+  }
+}
+
+.coupon-card {
+  &-top {
+    position: relative;
+    padding: 16px;
+    border-bottom: 1px solid $border-color;
+
+    figure {
+      margin-bottom: 12px;
+
+      img {
+        border-radius: 8px;
+      }
+    }
+
+    h4 {
+      line-height: 24px;
+      font-weight: 500;
+      letter-spacing: -0.37px;
+      margin-bottom: 6px;
+    }
+    p {
+      font-size: 13px;
+      line-height: 17px;
+      letter-spacing: -0.25px;
+      color: $content-color-light;
+    }
+  }
+
+  &-bottom {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+
+    .badge-coupon {
+      display: block;
+      height: 36px;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 3.6px;
+      font-weight: 700;
+      color: $primary-green;
+      padding: 10px 14px;
+      border: 1px dashed $green-50;
+      background-color: $green-8;
+      border-radius: 8px;
+    }
+  }
+}

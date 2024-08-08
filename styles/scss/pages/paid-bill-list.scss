@@ -1,0 +1,32 @@
+.with-sm-uncheck-bg {
+  height: 18px;
+  line-height: 0;
+}
+
+.with-sm-uncheck-bg input[type='checkbox'] + label {
+  padding: 0 0 0 18px !important;
+}
+
+.with-sm-uncheck-bg input[type='checkbox'] + label:before {
+  width: 18px;
+  height: 18px;
+  background: url(/assets/images/checkbox-tick.svg) no-repeat center/8px
+    $border-color !important;
+}
+
+.with-sm-uncheck-bg input[type='checkbox'] + label:after {
+  content: '';
+  left: 5px;
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  background: url(/assets/images/checkbox-tick.svg) no-repeat center/contain;
+}
+
+.btn-36 {
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 0;
+}

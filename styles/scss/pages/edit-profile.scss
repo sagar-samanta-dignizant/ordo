@@ -1,0 +1,168 @@
+.btn-fixed-btm {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+
+  .container {
+    padding: 0;
+  }
+}
+
+//////// ================== EDIT PROFILE STYLE START ==================
+
+.upload-pp {
+  height: 120px;
+  width: 120px;
+  position: relative;
+  margin: 20px auto 30px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+
+  .filecontainer {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 34px;
+    height: 34px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 16px;
+      max-height: 16px;
+      border-radius: 0;
+    }
+    [type='file'] {
+      opacity: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
+
+.editbtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//////// ================== EDIT PROFILE STYLE END ==================
+
+//////// ================== CHANGE PASSWORD STYLE START ==================
+
+.password-validation {
+  .form-control.is-invalid,
+  .was-validated .form-control:invalid {
+    background: white !important;
+    border-color: white !important;
+  }
+}
+
+.show-password {
+  position: absolute;
+  right: 16px;
+  top: 8px;
+}
+
+//////// ================== CHANGE PASSWORD STYLE END ==================
+
+.noti-settings-style-1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  h5 {
+    line-height: 19px;
+    margin-bottom: 3px;
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: $content-color-light;
+  }
+}
+
+.noti-settings-style-2 {
+  h5 {
+    line-height: 19px;
+    margin-bottom: 3px;
+  }
+
+  p {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    color: $content-color-light;
+    margin-bottom: 16px;
+  }
+}
+
+.push-notification {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  color: $secondary-dark-grey;
+
+  &::before {
+    flex: none;
+    content: '';
+    width: 12px;
+    height: 15px;
+    background: url(/assets/images/icons/icon-push-notification-black.svg)
+      no-repeat center / contain;
+  }
+}
+
+.form-icon-envelope {
+  padding-left: 44px !important;
+  background-image: url(/assets/images/icons/form-icon-envelope-grey.svg);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: 16px center;
+}
+
+//////// ================== CHANGE PASSWORD STYLE END ==================
+
+.verification-email {
+  display: flex;
+  gap: 12px;
+  overflow: hidden;
+
+  input {
+    font-size: 20px !important;
+    line-height: 28px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.25px;
+    border-radius: 10px;
+    border: none;
+    padding: 0 !important;
+    text-align: center;
+    text-transform: uppercase;
+    background: white !important;
+    color: $secondary-dark-grey !important;
+
+    &:focus {
+      background: white !important;
+      color: $secondary-dark-grey !important;
+    }
+  }
+}

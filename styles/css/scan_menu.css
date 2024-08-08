@@ -1,0 +1,205 @@
+.scanMenuContainer {
+  background-color: #0c0c0c;
+  width: 100%;
+  height: 100%;
+}
+.scanMenuBackground {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0px;
+  top: 0;
+  background: linear-gradient(180deg, rgba(0, 25, 33, 0.5) 0%, rgba(0, 25, 33, 0.5) 100%);
+  backdrop-filter: blur(104.5px);
+  z-index: 1;
+}
+.scanMenuContent{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0px;
+  top: 0;
+  z-index: 888;
+}
+.enterLocationTag {
+  width: 100%;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+pleaseEnterLocationTag {
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: -0.15px;
+  color: #99a2ab;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.scanMenuQrCode {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.rectangle22 {
+  position: absolute;
+  width: 44.261%;
+  height: 45.163%;
+  /* left: 738.69px; */
+  top: 264.19px;
+  /* background: #ffffff; */
+  border-radius: 8px;
+}
+.line1 {
+  position: absolute;
+  justify-content: center;
+  width: 55.221%;
+  height: 0px;
+  /* left: 68.389%; */
+  top: 51.043%;
+  border: 3px solid #fcce00;
+  box-shadow: 0px 4px 11px #ffc107;
+  transform: matrix(1, -0.01, 0.01, 1, 0, 0);
+  display: flex;
+  justify-content: center;
+  animation-name: lineAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes lineAnimation {
+  from { top: 51.043%}
+  to { top: 58.043%}
+}
+.scanMenuTextContainer {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 10%;
+}
+.locationTagFormContainer {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding: 0px 12px;
+  margin-top: 19px;
+}
+
+
+@media (min-width: 900px) {
+    .qr-code-footer, .scanqr-code{
+        display: none;
+    }
+    .cameraContainer{
+      top: 100px;
+      position: relative;
+    }
+
+}
+@media (max-width: 900px) {
+   .locationTagFormContainer,.pleaseEnterLocationTag, .enterLocationTag, .header-buttons{
+        display: none;
+    }
+}
+
+@keyframes ScannerAnimation{
+  0%{
+    top:36%;
+    box-shadow: 0px -4px 11px 0px #FCCE00;
+  }
+  100%{
+    top: 64%;
+  }
+}
+
+.scannerLine{
+  position: absolute;
+  top: 36%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 66%;
+  box-shadow: 0px 4px 11px 0px #FCCE00;
+  background-color: #FCCE00;
+  animation: ScannerAnimation 2s infinite alternate ease-in-out;
+  z-index: 1;
+}
+
+.cameraContainer {
+  /* height: calc(100vh - 300px); */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  /* background: #ccc; */
+  /* max-height: 450px;
+  max-width: 450px; */
+  position: relative;
+  margin: auto;
+}
+
+.camera-fixes{
+  width: 100%;
+  height: 100%;
+}
+
+.camera-fixes > section{ 
+  height: 100%;
+  width: 100%;
+}
+.camera-fixes > section > section{ 
+  height: 100%;
+  width: 100%;
+  padding: 0 !important;
+}
+
+.camera-fixes > section > section > div{
+  box-shadow: none !important;
+  background-image: url("/assets/images/qr-code/qr-code-border.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  border: none !important;
+  /* background:
+   linear-gradient(to right, black 4px, transparent 4px) 0 0,
+   linear-gradient(to right, black 4px, transparent 4px) 0 100%,
+   linear-gradient(to left, black 4px, transparent 4px) 100% 0,
+   linear-gradient(to left, black 4px, transparent 4px) 100% 100%,
+   linear-gradient(to bottom, black 4px, transparent 4px) 0 0,
+   linear-gradient(to bottom, black 4px, transparent 4px) 100% 0,
+   linear-gradient(to top, black 4px, transparent 4px) 0 100%,
+   linear-gradient(to top, black 4px, transparent 4px) 100% 100%; */
+}
+
+/* style={{
+  // backgroundImage:'url("assets/images/qr-code/qr-code-border.svg")',
+  // width:'275px',
+  // height:'273px',
+  // padding:'5px',
+  // backgroundSize:'cover',
+  background:'#331122',
+  width: '100%',
+  height: '100vh',
+}} */

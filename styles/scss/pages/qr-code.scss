@@ -1,0 +1,238 @@
+.qr-code {
+  position: relative;
+  background: url(/assets/images/qr-code/qr-page-bg.png) no-repeat center /
+    cover;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 25, 33, 0.5) 0%,
+      rgba(0, 25, 33, 0.5) 100%
+    );
+    backdrop-filter: blur(209px);
+    -webkit-backdrop-filter: blur(209px);
+  }
+
+  .qr-code-container {
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    align-self: center;
+    text-align: center;
+
+    .qr-code-heading {
+      max-width: 245px;
+      margin: 0 auto;
+      text-align: center;
+
+      img {
+        max-width: 64px;
+        margin-bottom: 24px;
+      }
+
+      h1 {
+        margin: 0 0 17px;
+        font-weight: 900;
+        font-size: 40px;
+        // color: $orange;
+      }
+
+      h4 {
+        color: white;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-family: $primary-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0;
+      }
+    }
+
+    .qr-code-area {
+      height: 276px;
+      width: 276px;
+      padding: 28px;
+      margin: 8vh auto;
+      background: url(/assets/images/qr-code/qr-code-border.svg) no-repeat;
+      background-position: bottom;
+
+      .qr-code-scan {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          max-width: 85%;
+          max-height: 85%;
+        }
+      }
+    }
+
+    .enter-location {
+      span {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: -0.41px;
+
+        display: block;
+        margin: 30px 0 25px;
+      }
+
+      a {
+        display: block;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: -0.41px;
+        // color: $yellow;
+      }
+    }
+  }
+}
+
+input{
+  color: #969696!important;
+}
+
+.location-modal {
+  max-width: 270px;
+  margin: 0 auto;
+
+  .modal-content {
+    border-radius: 16px;
+    padding: 0;
+    text-align: center;
+
+    p {
+      font-size: 13px;
+      line-height: 18px;
+      letter-spacing: -0.08px;
+      margin-bottom: 30px;
+    }
+
+    input.locatuion-field {
+      background: $input-bg;
+      border-radius: 50px !important;
+      border: none;
+      padding: 0 15px;
+      height: 34px;
+      line-height: 30px;
+      font-size: 13px;
+
+      &:focus {
+        border: none !important;
+        box-shadow: none !important;
+      }
+
+      &::placeholder {
+        opacity: 1;
+      }
+
+      &:-ms-input-placeholder {
+        opacity: 1;
+      }
+
+      &::-ms-input-placeholder {
+        opacity: 1;
+      }
+    }
+  }
+
+  .modal-body {
+    padding: 16px 18px 30px;
+  }
+
+  .modal-footer {
+    padding: 0;
+    border-radius: 0 0 16px 16px;
+    display: flex;
+    overflow: hidden;
+
+    button {
+      background: #ababab;
+      width: 50%;
+      padding: 0;
+      line-height: 44px;
+      color: white;
+      box-shadow: none;
+      border-radius: 0;
+      text-transform: capitalize;
+      margin: 0 !important;
+      border: 0;
+    }
+  }
+}
+
+.qr-code-footer {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 34px;
+  z-index: 2;
+
+  ul {
+    @include lists;
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    li {
+      a {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(50px);
+
+        img {
+          max-width: 32px;
+          max-height: 32px;
+        }
+      }
+    }
+  }
+}
+
+.scan-info{
+  color: #99A2AB;
+  font-size: 14px;
+  text-align: center;
+}
+
+.scan-code {
+font-size: 20px;
+font-weight: 600;
+line-height: 26px;
+letter-spacing: 0.3700000047683716px;
+text-align: center;
+color: rgba(255, 255, 255, 1);
+;
+}
+.vectorItemsContainer{
+  justify-content: center;
+  text-align: center;
+  width:100%;
+}

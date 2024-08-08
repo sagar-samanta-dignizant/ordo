@@ -1,0 +1,115 @@
+.table-booking-features {
+  margin-right: -20px;
+
+  ul {
+    @include lists;
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    -moz-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+      height: 0px;
+      width: 0px;
+      border-radius: 0px;
+    }
+
+    &::-moz-scrollbar {
+      display: none;
+      height: 0px;
+      width: 0px;
+      border-radius: 0px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      display: none;
+      height: 0px;
+      width: 0px;
+      border-radius: 0px;
+      background: $border-color;
+    }
+    li {
+      a {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 13px;
+        color: $content-color;
+        background-color: white;
+        border: 1px solid $border-color;
+        border-radius: 8px;
+        padding: 7px 12px;
+        white-space: nowrap;
+      }
+
+      &:last-child {
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+.select-table {
+  border: 1px solid $green-60;
+
+  h5,
+  ul li,
+  p {
+    color: $primary-green !important;
+  }
+
+  .card-content-lists li::before {
+    background: $primary-green !important;
+  }
+}
+
+/* =========== Suman ============== */
+
+.booking-filter-sorting {
+  input[type='radio'] + label {
+    padding-left: 0px !important;
+    display: block !important;
+  }
+  input[type='radio']:checked + label {
+    color: #07a279 !important;
+  }
+  input[type='radio'] + label:before {
+    left: auto !important;
+    right: 0 !important;
+  }
+  input[type='radio']:checked + label:before {
+    border-color: #07a279 !important;
+  }
+
+  input[type='radio'] + label:after {
+    left: auto !important;
+    right: 6px !important;
+  }
+}
+
+.booking-filter-canvus {
+  height: auto;
+
+  .offcanvas-body {
+    height: 100%;
+    transition: 0.3s all;
+  }
+
+  .offcanvas-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .btn {
+      width: calc(50% - 10px);
+    }
+  }
+}
+
+.offcanvas-bottom {
+  max-height: 85%;
+}

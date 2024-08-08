@@ -1,0 +1,315 @@
+.input-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 16px !important;
+  line-height: 19px !important;
+  font-weight: 600 !important;
+  font-family: $primary-font !important;
+  letter-spacing: -0.02em !important;
+  text-transform: capitalize !important;
+  color: $secondary-dark-grey !important;
+  margin-bottom: 10px !important;
+
+  sup {
+    color: #ff2323;
+    top: -1px;
+    font-size: 14px;
+  }
+}
+
+.form-text {
+  font-size: 14px !important;
+  line-height: 24px !important;
+  font-weight: normal !important;
+  font-family: $primary-font !important;
+  color: $content-color !important;
+  letter-spacing: -0.01em !important;
+  margin-top: 8px !important;
+}
+
+.form-check {
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.bg-primary {
+  background: $primary-green !important;
+
+  input[type='checkbox'] + label {
+    color: #ffffff !important;
+  }
+
+  input[type='checkbox'] + label:before {
+    background: #ffffff !important;
+  }
+
+  input[type='checkbox'] + label:after {
+    background: url(/assets/images/checkbox-tick-green.svg) no-repeat center /
+      contain;
+  }
+
+  input[disabled] + label {
+    // opacity: 1 !important;
+  }
+
+  input[type='radio'] + label {
+    color: #ffffff !important;
+  }
+
+  input[type='radio'] + label:before {
+    border-color: #ffffff !important;
+  }
+
+  input[type='radio'] + label:after {
+    background: #ffffff !important;
+  }
+
+  input[type='radio']:checked + label:before {
+    border-color: #ffffff !important;
+  }
+}
+
+.checkbox-card {
+  padding: 20px;
+  border: 2px dashed $primary-green;
+  border-radius: 5px;
+  border-spacing: 15px;
+  margin-bottom: 30px;
+
+  @include mobile-lg {
+    margin-bottom: 20px;
+  }
+}
+
+.progressbar-wrapper {
+  margin-bottom: 30px;
+}
+
+.progress {
+  height: 7px;
+  background-color: $input-bg;
+  border-radius: 2px;
+
+  @include mobile-lg {
+    height: 5px;
+  }
+
+  .progress-bar {
+    background-color: $primary-green;
+  }
+}
+
+////////// ===================== Input Form with Icon =====================
+
+.form-icon {
+  padding-left: 48px !important;
+  background-image: url(/assets/images/placeholder-icon.svg);
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: 20px center;
+
+  @include mobile-lg {
+    background-position: 12px center;
+    padding-left: 44px !important;
+  }
+
+  &-envelope-grey {
+    background-image: url(/assets/images/login/icon-email-grey.svg);
+    background-size: 16px;
+  }
+
+  &-password-grey {
+    background-image: url(/assets/images/login/icon-password-grey.svg);
+    background-size: 16px;
+  }
+}
+
+textarea.form-icon {
+  background-position: 20px 18px;
+}
+
+////////// ===================== Input Group =====================
+
+.input-group
+  > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  margin-left: inherit;
+}
+
+.input-group {
+  background: $input-bg;
+  border-radius: 8px;
+}
+
+.input-group-text {
+  background: #ffffff;
+  border-radius: 6px !important;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  font-family: $primary-font;
+  letter-spacing: -0.02em;
+  color: rgba($color: $secondary-dark-grey, $alpha: 0.7);
+  border: none;
+  min-width: 34px;
+  justify-content: center;
+  margin: 6px;
+  padding: 0 12px;
+
+  i {
+    width: 16px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .input-flag-icon {
+    width: 25px;
+    height: 16px;
+    line-height: 0;
+    flex: none;
+    border-radius: 2px;
+    margin-right: 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+////////// ===================== Input Small =====================
+
+@include macbook {
+  .input-sm-scale {
+    @include input-sm-scale;
+  }
+}
+
+@include windows-laptop {
+  .input-sm-scale {
+    @include input-sm-scale;
+  }
+}
+
+@include tab-landscape {
+  .input-sm-scale {
+    @include input-sm-scale;
+  }
+}
+
+.input-wrapper.input-sm {
+  @include input-sm-scale;
+}
+
+////////////////////////// Validation Style
+
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  background-color: #ffffff !important;
+  border: 2px solid rgba(7, 162, 121, 0.15) !important;
+  background-image: none !important;
+
+  &:focus {
+    background-color: #ffffff !important;
+    border: 2px solid rgba(7, 162, 121, 0.15) !important;
+  }
+}
+
+.form-select.is-valid,
+.was-validated .form-select:valid {
+  background-color: #ffffff !important;
+  border: 2px solid rgba(7, 162, 121, 0.15) !important;
+
+  &:focus {
+    background-color: #ffffff !important;
+    border: 2px solid rgba(7, 162, 121, 0.15) !important;
+  }
+}
+
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  background-color: rgba(254, 23, 37, 0.04) !important;
+  background-image: none !important;
+  border: 2px solid $alert-red !important;
+
+  &:focus {
+    background-color: rgba(254, 23, 37, 0.04) !important;
+    border: 2px solid $alert-red !important;
+  }
+}
+
+.form-select.is-invalid,
+.was-validated .form-select:invalid {
+  background-color: rgba(254, 23, 37, 0.04) !important;
+  border: 2px solid $alert-red !important;
+
+  &:focus {
+    background-color: rgba(254, 23, 37, 0.04) !important;
+    border: 2px solid $alert-red !important;
+  }
+}
+
+.invalid-feedback {
+  color: $alert-red !important;
+}
+
+input.verified {
+  background-image: url(/assets/images/registration/circle-check-green.svg) !important;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: center right 20px !important;
+  transition: none !important;
+
+  @include macbook {
+    background-position: center right 16px !important;
+  }
+
+  @include windows-laptop {
+    background-position: center right 16px !important;
+  }
+
+  @include tab-landscape {
+    background-position: center right 16px !important;
+  }
+}
+
+input.error {
+  background-image: url(/assets/images/icons/icon-alert-danger.svg) !important;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: center right 20px !important;
+  transition: none !important;
+
+  @include macbook {
+    background-position: center right 16px !important;
+  }
+  @include windows-laptop {
+    background-position: center right 16px !important;
+  }
+
+  @include tab-landscape {
+    background-position: center right 16px !important;
+  }
+}
+
+input.search {
+  background-image: url(/assets/images/table/search.svg) !important;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  background-position: center right 20px !important;
+  transition: none !important;
+
+  @include macbook {
+    background-position: center right 16px !important;
+  }
+  @include windows-laptop {
+    background-position: center right 16px !important;
+  }
+
+  @include tab-landscape {
+    background-position: center right 16px !important;
+  }
+}

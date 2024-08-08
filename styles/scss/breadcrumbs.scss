@@ -1,0 +1,35 @@
+.breadcrumb {
+  color: $content-color;
+  .breadcrumb-item {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 0;
+
+    a {
+      font-size: 14px;
+      line-height: 20px;
+      color: $content-color;
+      text-decoration: none;
+    }
+    + .breadcrumb-item {
+      padding-left: 12px;
+
+      &::before {
+        content: '';
+        position: relative;
+        display: inline-block;
+        margin-right: 12px;
+        float: none;
+        top: 0;
+        background: transparent url(/assets/images/toasts/breadcrumb-arrow.svg)
+          no-repeat center/contain;
+        height: 8px;
+        width: 6px;
+      }
+    }
+
+    &.active {
+      color: $primary-green;
+    }
+  }
+}

@@ -1,0 +1,181 @@
+.booking-confirmed {
+  h2 {
+    color: $primary-green;
+
+    &::before {
+      content: '';
+      position: relative;
+      top: 4px;
+      display: inline-block;
+      height: 24px;
+      width: 24px;
+      background: url(/assets/images/payment-summary/booking-confirmed.svg)
+        no-repeat center / contain;
+      margin-right: 8px;
+    }
+  }
+}
+
+.booking-pending {
+  h2 {
+    color: $status-yellow;
+
+    &::before {
+      content: '';
+      position: relative;
+      top: 4px;
+      display: inline-block;
+      height: 24px;
+      width: 24px;
+      background: url(/assets/images/payment-summary/booking-pending.svg)
+        no-repeat center / contain;
+      margin-right: 8px;
+    }
+  }
+}
+
+.booking-cancelled {
+  h2 {
+    color: $alert-red;
+
+    &::before {
+      content: '';
+      position: relative;
+      top: 4px;
+      display: inline-block;
+      height: 24px;
+      width: 24px;
+      background: url(/assets/images/payment-summary/booking-cancelled.svg)
+        no-repeat center / contain;
+      margin-right: 8px;
+    }
+  }
+}
+
+.booking-completed {
+  h2 {
+    color: $green-color;
+
+    &::before {
+      content: '';
+      position: relative;
+      top: 4px;
+      display: inline-block;
+      height: 24px;
+      width: 24px;
+      background: url(/assets/images/payment-summary/booking-completed.svg)
+        no-repeat center;
+      margin-right: 8px;
+    }
+  }
+}
+
+.order-pending {
+  h2 {
+    color: $content-color;
+
+    &::before {
+      content: '';
+      position: relative;
+      top: 4px;
+      display: inline-block;
+      height: 24px;
+      width: 24px;
+      background: url(/assets/images/payment-summary/order-pending.svg)
+        no-repeat center / contain;
+      margin-right: 8px;
+    }
+  }
+}
+
+.booking-details-card {
+  padding: 20px;
+
+  figure {
+    align-self: center;
+  }
+
+  h4 {
+    margin-bottom: 0;
+    line-height: 18px;
+  }
+}
+
+.input-md {
+  .my-datepicker .my-datepicker-icon {
+    padding: 10px 14px;
+  }
+
+  .form-control {
+    height: 42px !important;
+    padding: 0 12px !important;
+    font-size: 14px !important;
+    color: $secondary-dark-grey !important;
+  }
+
+  select.form-control {
+    padding-left: 36px !important;
+    background: url(/assets/images/dashboard/select-arrow-2.svg) no-repeat right
+        14px center / 11px,
+      url(/assets/images/icons/icon-user-light-grey.svg) no-repeat 10px center /
+        15px !important;
+    background-color: $input-bg !important;
+  }
+}
+body.dark-mode .addons-card,
+body.dark-mode .restaurant-address-link .btn  {
+    background-color: #FFFFFF1A !important;
+    color: #FFFFFF !important;
+    border-color: transparent !important;
+}
+
+.restaurant-address-link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  .btn {
+    width: 50%;
+    padding: 0 10px;
+    background: #F4F5F6;
+
+    img {
+      width: 16px;
+      margin-right: 5px;
+      position: relative;
+      top: -2px;
+    }
+
+    &:hover {
+      background:#F4F5F6;
+      color: $primary-dark-green;
+      border-color: transparent;
+    }
+
+    &:focus {
+      background: $green-8;
+      color: $primary-green;
+      border-color: transparent;
+    }
+
+    &:active {
+      background: $green-8;
+      color: $primary-green;
+      border-color: transparent;
+    }
+  }
+}
+
+.table-booking-details {
+  .tips-card-checkbox input[type='radio'] + label {
+    background: $content-color !important;
+    line-height: 32px !important;
+    color: white !important;
+    border-color: $content-color !important;
+  }
+
+  .tips-card-checkbox input[type='radio']:checked + label {
+    background: $primary-green !important;
+    border-color: $primary-green !important;
+  }
+}

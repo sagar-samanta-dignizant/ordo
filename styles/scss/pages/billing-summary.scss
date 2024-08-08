@@ -1,0 +1,73 @@
+.btn-print-white {
+  background-color: white;
+  border-color: white;
+  color: $primary-green;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+    position: relative;
+    top: 3px;
+    background: url(/assets/images/billing-summary/icon-print-green.svg)
+      no-repeat center / contain;
+  }
+
+  &:hover {
+    background-color: white;
+    border-color: white;
+    color: $primary-green;
+  }
+
+  &:focus {
+    background-color: white;
+    border-color: white;
+    color: $primary-green;
+  }
+}
+
+.item-card {
+  i {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    flex: none;
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+  .alert-red {
+    color: $alert-red;
+  }
+}
+
+.refund-track-order {
+  i {
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 8px;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.43),
+        rgba(0, 0, 0, 0.43)
+      );
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 16px;
+      height: 16px;
+      background: url(/assets/images/billing-summary/icon-refund-white.svg)
+        no-repeat center / contain;
+    }
+  }
+}

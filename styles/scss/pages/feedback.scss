@@ -1,0 +1,66 @@
+.rating {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 14px;
+  overflow: hidden;
+  flex-direction: row-reverse;
+  position: relative;
+}
+
+.rating-0 {
+  filter: grayscale(100%);
+}
+
+.rating > input {
+  display: none;
+}
+
+.rating input[type='radio'] + label {
+  width: 48px !important;
+  height: 48px !important;
+  padding: 0px !important;
+  margin-top: auto;
+  background-color: $light-grey;
+  background-image: url(/assets/images/feedback/star-light-grey.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+  transition: 0.3s;
+  border-radius: 10px !important;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.rating > label::before {
+  display: none !important;
+}
+
+.rating > label::after {
+  display: none !important;
+}
+
+.rating > input:checked ~ label,
+.rating > input:checked ~ label ~ label {
+  background-image: url(/assets/images/feedback/star-green.svg);
+}
+
+.rating > input:not(:checked) ~ label:hover,
+.rating > input:not(:checked) ~ label:hover ~ label {
+  background-image: url(/assets/images/feedback/star-green.svg);
+}
+
+.feedback-rating-card {
+  textarea {
+    font-size: 14px !important;
+    line-height: 24px !important;
+    padding: 10px 14px !important;
+  }
+}
+
+.restaurant-raing {
+  textarea {
+    height: 150px !important;
+  }
+}

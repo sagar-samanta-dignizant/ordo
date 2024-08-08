@@ -1,0 +1,149 @@
+@import "partials.scss";
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800";
+// src: url("../webfonts/futura/Futura Bold font.ttf");
+@font-face {
+  font-family: futura;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Futura"), url(https://fonts.cdnfonts.com/s/37773/FUTURA55REGULAR.woff) format("woff");
+}
+@font-face {
+  font-family: futura;
+  font-style: normal;
+  font-weight: 400;
+  src: local("Futura"), url(https://fonts.cdnfonts.com/s/37773/FUTURA56ITALIC.woff) format("woff");
+}
+@font-face {
+  font-family: futura;
+  font-style: normal;
+  font-weight: 300;
+  src: local("Futura"), url(https://fonts.cdnfonts.com/s/37773/FUTURA45LIGHT.woff) format("woff");
+}
+@font-face {
+  font-family: futura;
+  font-style: italic;
+  font-weight: 300;
+  src: local("Futura"),
+    url(https://fonts.cdnfonts.com/s/37773/FUTURA46LIGHTITALIC.woff) format("woff");
+}
+@font-face {
+  font-family: futura;
+  font-style: normal;
+  font-weight: 500;
+  src: local("Futura"), url(https://fonts.cdnfonts.com/s/37773/FUTURA65MEDIUM.woff) format("woff");
+}
+@font-face {
+  font-family: futura;
+  font-style: normal;
+  font-weight: 700;
+  src: local("Futura"), url(https://fonts.cdnfonts.com/s/37773/FUTURA75BOLD.woff) format("woff");
+}
+@font-face {
+  font-family: futura;
+  font-style: italic;
+  font-weight: 700;
+  src: local("Futura"),
+    url(https://fonts.cdnfonts.com/s/37773/FUTURA76BOLDITALIC.woff) format("woff");
+}
+
+@font-face {
+  font-family: "SF";
+  // font-style: regular;
+  font-weight: 600;
+  src: local("SF"),
+    url('../webfonts/sf-pro-display/SF-Pro-Display-Black.woff') format("woff");
+}
+
+@font-face {
+  font-family: "SF-Semi";
+  // font-style: regular;
+  font-weight: 600;
+  src: local("SF"),
+    url('../webfonts/sf-pro-display/SF-Pro-Display-Semibold.woff') format("woff");
+}
+@font-face {
+  font-family: "SF-Regular";
+  // font-style: regular;
+  font-weight: 600;
+  src: local("SF"),
+    url('../webfonts/sf-pro-display/SF-Pro-Display-Regular.woff') format("woff");
+}
+
+/////////////////////
+
+@import "header";
+@import "footer";
+@import "component";
+@import "navbar.scss";
+
+/////////////////////
+@import "alert";
+@import "badge";
+@import "booking-table";
+@import "breadcrumbs";
+@import "buttons.scss";
+@import "calendar";
+@import "cards";
+@import "chart";
+@import "class";
+@import "color-palet";
+@import "country-dropdown";
+@import "form";
+@import "input";
+@import "mixins";
+@import "modal";
+@import "popovers";
+@import "progress";
+@import "table";
+@import "toasts";
+@import "typography";
+@import "variable";
+@import "upay-box";
+@import "default";
+
+/////////////////////////////
+
+@import "styles/scss/pages/registration";
+@import "pages/open-with-modal.scss";
+@import "styles/scss/pages/landing";
+@import "styles/scss/pages/menu";
+@import "styles/scss/pages/qr-code";
+@import "styles/scss/pages/search-menu";
+@import "styles/scss/pages/edit-profile";
+@import "styles/scss/pages/profile";
+@import "styles/scss/pages/health-hub";
+@import "styles/scss/pages/help";
+@import "styles/scss/pages/filter";
+@import "styles/scss/pages/search-menu-filter";
+@import "styles/scss/pages/new-table-booking";
+@import "styles/scss/pages/my-order";
+@import "styles/scss/pages/product-information";
+@import "styles/scss/pages/modal-extra";
+
+@import "styles/scss/pages/coupon-codes";
+@import "styles/scss/pages/payment-summary";
+@import "styles/scss/pages/payment-methods";
+@import "styles/scss/pages/table-booking-details";
+@import "styles/scss/pages/track-order-modal";
+@import "styles/scss/pages/addons-modal1";
+@import "styles/scss/pages/feedback";
+@import "styles/scss/pages/company-details";
+@import "styles/scss/pages/order-summary";
+@import "styles/scss/pages/loyalty-points-card";
+@import "styles/scss/pages/transaction-history";
+@import "styles/scss/pages/booking-table";
+@import "styles/scss/pages/restaurant-profile";
+@import "styles/scss/pages/notifications";
+@import "styles/scss/pages/billing-summary";
+@import "styles/scss/pages/paid-bill-list";
+
+.jump-target::before {
+  content:"";
+  display:block;
+  height:1px; /* fixed header height*/
+  margin:-1px 0 0; /* negative fixed header height */
+}
+
+.jump-target{
+  margin-top: -50px;
+}

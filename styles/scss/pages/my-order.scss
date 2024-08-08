@@ -1,0 +1,270 @@
+.nav-tabs.order-nav {
+  height: 36px;
+  border: none;
+  padding: 5px;
+  background-color: white;
+  border-radius: 8px;
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    height: 26px;
+    background-color: transparent;
+    border: none;
+    line-height: 26px;
+    font-size: 14px;
+    color: $content-color;
+    border-radius: 6px;
+
+    &:hover {
+      color: $secondary-dark-grey;
+      background-color: $input-bg;
+    }
+  }
+
+  .active {
+    background-color: $input-bg;
+    color: $secondary-dark-grey;
+  }
+}
+
+.order-card-head {
+  padding: 16px 20px;
+
+  figure {
+    height: 48px;
+    width: 48px;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+}
+
+.order-progress {
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 22px;
+    min-height: 22px;
+  }
+}
+
+.img-greyscale-full {
+  filter: grayscale(1);
+}
+
+.img-invert-half {
+  filter: invert(0.5);
+}
+
+.order-progress-lg {
+  @extend .order-progress;
+
+  img {
+    min-height: 60px;
+    min-width: 60px;
+  }
+}
+
+.order-card-body {
+  padding: 16px 20px;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+
+  ul {
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 6px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .count {
+        display: inline-block;
+        background: $content-color-light;
+        height: 18px;
+        width: 18px;
+        border-radius: 50%;
+        text-align: center;
+        color: white;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 19px;
+      }
+
+      h4 {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        letter-spacing: 0.15px;
+        margin: 0;
+      }
+
+      .price {
+        color: $content-color;
+      }
+    }
+
+    .order-preparing {
+      .count {
+        background: #ffa216;
+      }
+      h4 {
+        color: #ffa216;
+      }
+      .price {
+        color: #ffa216;
+      }
+    }
+
+    .order-served {
+      .count {
+        background: #4285f4;
+      }
+      h4 {
+        color: #4285f4;
+      }
+      .price {
+        color: #4285f4;
+      }
+    }
+
+    .order-cancelled {
+      .count {
+        background: $alert-red;
+      }
+      h4 {
+        color: $alert-red;
+      }
+      .price {
+        color: $alert-red;
+      }
+    }
+  }
+}
+
+.order-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+
+  h3 {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    letter-spacing: 0.37px;
+  }
+
+  .repeat {
+    color: $green-color;
+    font-weight: 600;
+  }
+
+  span {
+    display: block;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: -0.25px;
+  }
+}
+
+.order-card-footer {
+  .btn {
+    font-size: 14px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0 12px;
+    border-radius: 8px;
+    border: none;
+  }
+
+  .btn-repeat {
+    height: 34px;
+    line-height: 30px;
+    padding: 0 16px;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      height: 12px;
+      width: 12px;
+      background: url(/assets/images/new-table-booking/btn-repeat.svg) no-repeat
+        center;
+      margin-right: 8px;
+      position: relative;
+      top: 1px;
+    }
+  }
+
+  .btn-track {
+    background: $content-color;
+  }
+
+  .btn-light-green {
+    background: $input-bg;
+    color: $primary-dark-green;
+  }
+
+  .btn-cancelled {
+    background: rgba(234, 67, 53, 0.06);
+    color: $alert-red;
+    &::before {
+      content: '';
+      display: inline-block;
+      height: 12px;
+      width: 12px;
+      margin-right: 8px;
+      background: url(/assets/images/icons/icon-close-circle-red.svg) no-repeat
+        center / contain;
+      position: relative;
+      top: 1px;
+    }
+  }
+}
+
+// ADDED SCSS BY AKASH
+
+.header-filter-nav {
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: max-content;
+
+  .nav-tabs.order-nav .nav-link {
+    font-weight: 500;
+  }
+}
+
+.header-shadow {
+  .header-filter-nav {
+    .nav-tabs.order-nav {
+      background-color: $input-bg;
+      color: $secondary-dark-grey;
+
+      .active {
+        background: white;
+      }
+    }
+  }
+}
+
+.refund-completed {
+  background: rgba(44, 189, 83, 0.06);
+  img {
+    max-width: 10px;
+  }
+}

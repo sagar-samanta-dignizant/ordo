@@ -1,0 +1,716 @@
+@mixin monitor-lg {
+  @media all and #{$monitor-lg} {
+    @content;
+  }
+}
+
+@mixin desktop-lg {
+  @media all and #{$desktop-lg} {
+    @content;
+  }
+}
+
+@mixin hd-display {
+  @media all and #{$hd-display} {
+    @content;
+  }
+}
+
+@mixin macbook {
+  @media all and #{$macbook} {
+    @content;
+  }
+}
+
+@mixin windows-laptop {
+  @media all and #{$windows-laptop} {
+    @content;
+  }
+}
+
+@mixin tab-lg {
+  @media all and #{$tab-lg} {
+    @content;
+  }
+}
+
+@mixin tab-landscape {
+  @media all and #{$tab-landscape} {
+    @content;
+  }
+}
+
+@mixin tab-lg-portrait {
+  @media all and #{$tab-lg-portrait} {
+    @content;
+  }
+}
+
+@mixin tab-portrait {
+  @media all and #{$tab-portrait} {
+    @content;
+  }
+}
+
+@mixin tab-sm-portrait {
+  @media all and #{$tab-sm-portrait} {
+    @content;
+  }
+}
+
+@mixin mobile-lg {
+  @media all and #{$mobile-lg} {
+    @content;
+  }
+}
+
+@mixin mobile-sm-portrait {
+  @media all and #{$mobile-sm-portrait} {
+    @content;
+  }
+}
+
+@mixin iphone-old {
+  @media all and #{$iphone-old} {
+    @content;
+  }
+}
+
+@mixin android-mobile {
+  @media all and #{$android-mobile} {
+    @content;
+  }
+}
+
+@mixin iphone-vs {
+  @media all and #{$iphone-vs} {
+    @content;
+  }
+}
+
+@mixin heading {
+  color: $secondary-dark-grey;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  padding: 0;
+  position: relative;
+}
+
+@mixin button-sm {
+  height: 40px;
+  line-height: 36px;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  padding: 0 16px;
+  border-radius: 8px;
+
+  &.left-arrow {
+    &::before {
+      width: 7px;
+      height: 11px;
+      margin-right: 10px;
+      top: 1px;
+    }
+  }
+
+  &.right-arrow {
+    &::after {
+      width: 7px;
+      height: 11px;
+      margin-left: 10px;
+      top: 1px;
+    }
+  }
+
+  &.left-arrow-circle {
+    &::before {
+      width: 16px;
+      height: 16px;
+      margin-right: 10px;
+    }
+  }
+
+  &.right-arrow-circle {
+    &::after {
+      width: 16px;
+      height: 16px;
+      margin-left: 10px;
+    }
+  }
+}
+
+@mixin button-xs {
+  height: 36px;
+  line-height: 32px;
+  font-size: 14px;
+  border-width: 1px;
+  letter-spacing: -0.01em;
+  padding: 0 16px;
+  border-radius: 8px;
+
+  &.left-arrow {
+    &::before {
+      width: 6px;
+      height: 10px;
+      margin-right: 10px;
+      top: 0px;
+    }
+  }
+
+  &.right-arrow {
+    &::after {
+      width: 6px;
+      height: 10px;
+      margin-left: 10px;
+      top: 0px;
+    }
+  }
+
+  &.left-arrow-circle {
+    &::before {
+      width: 14px;
+      height: 14px;
+      margin-right: 10px;
+      top: 2px;
+    }
+  }
+
+  &.right-arrow-circle {
+    &::after {
+      width: 14px;
+      height: 14px;
+      margin-left: 10px;
+      top: 2px;
+    }
+  }
+}
+
+@mixin input-sm-scale {
+  .form-label {
+    font-size: 14px !important;
+    line-height: 17px !important;
+    margin-bottom: 8px !important;
+
+    sup {
+      font-size: 12px;
+    }
+  }
+
+  .form-text {
+    font-size: 13px !important;
+    line-height: 16px !important;
+    margin-top: 8px !important;
+  }
+
+  .input-group-text {
+    margin: 4px;
+  }
+
+  select,
+  input[type='week'],
+  input[type='time'],
+  input[type='month'],
+  input[type='datetime-local'],
+  input[type='datetime'],
+  input[type='date'],
+  input[type='color'],
+  input[type='url'],
+  input[type='text'],
+  input[type='tel'],
+  input[type='search'],
+  input[type='password'],
+  input[type='select'],
+  input[type='number'],
+  input[type='email'] {
+    height: 40px;
+    padding: 0 16px;
+    font-size: 14px !important;
+  }
+
+  textarea {
+    font-size: 14px !important;
+  }
+
+  .form-icon {
+    padding-left: 40px !important;
+    background-image: url(/assets/images/placeholder-icon.svg);
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 16px center;
+  }
+
+  textarea.form-icon {
+    padding-left: 46px !important;
+    background-position: 20px 18px;
+  }
+}
+
+@mixin button {
+  height: 48px;
+  line-height: 44px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.018em;
+  text-align: center;
+  // text-transform: capitalize;
+  display: inline-block;
+  padding: 0px 20px;
+  border-radius: 10px;
+  vertical-align: baseline;
+  transition: 0.3s all;
+  position: relative;
+  white-space: nowrap;
+  background: $primary-green;
+  border: 2px solid $primary-green;
+  z-index: 2;
+}
+
+//// Loop For Sapcing Class
+
+@for $i from 90 through 0 {
+  .m-#{$i*2} {
+    margin: $i * 2px !important;
+  }
+  .mx-#{$i*2} {
+    margin-left: $i * 2px !important;
+    margin-right: $i * 2px !important;
+  }
+  .my-#{$i*2} {
+    margin-top: $i * 2px !important;
+    margin-bottom: $i * 2px !important;
+  }
+  .mt-#{$i*2} {
+    margin-top: $i * 2px !important;
+  }
+  .mb-#{$i*2} {
+    margin-bottom: $i * 2px !important;
+  }
+  .ml-#{$i*2} {
+    margin-left: $i * 2px !important;
+  }
+  .mr-#{$i*2} {
+    margin-right: $i * 2px !important;
+  }
+  .p-#{$i*2} {
+    padding: $i * 2px !important;
+  }
+  .px-#{$i*2} {
+    padding-left: $i * 2px !important;
+    padding-right: $i * 2px !important;
+  }
+  .py-#{$i*2} {
+    padding-top: $i * 2px !important;
+    padding-bottom: $i * 2px !important;
+  }
+  .pt-#{$i*2} {
+    padding-top: $i * 2px !important;
+  }
+  .pb-#{$i*2} {
+    padding-bottom: $i * 2px !important;
+  }
+  .pl-#{$i*2} {
+    padding-left: $i * 2px !important;
+  }
+  .pr-#{$i*2} {
+    padding-right: $i * 2px !important;
+  }
+
+  @include macbook {
+    .m-xl-#{$i*2} {
+      margin: $i * 2px !important;
+    }
+    .mx-xl-#{$i*2} {
+      margin-left: $i * 2px !important;
+      margin-right: $i * 2px !important;
+    }
+    .my-xl-#{$i*2} {
+      margin-top: $i * 2px !important;
+      margin-bottom: $i * 2px !important;
+    }
+    .mt-xl-#{$i*2} {
+      margin-top: $i * 2px !important;
+    }
+    .mb-xl-#{$i*2} {
+      margin-bottom: $i * 2px !important;
+    }
+    .ml-xl-#{$i*2} {
+      margin-left: $i * 2px !important;
+    }
+    .mr-xl-#{$i*2} {
+      margin-right: $i * 2px !important;
+    }
+    .p-xl-#{$i*2} {
+      padding: $i * 2px !important;
+    }
+    .px-xl-#{$i*2} {
+      padding-left: $i * 2px !important;
+      padding-right: $i * 2px !important;
+    }
+    .py-xl-#{$i*2} {
+      padding-top: $i * 2px !important;
+      padding-bottom: $i * 2px !important;
+    }
+    .pt-xl-#{$i*2} {
+      padding-top: $i * 2px !important;
+    }
+    .pb-xl-#{$i*2} {
+      padding-bottom: $i * 2px !important;
+    }
+    .pl-xl-#{$i*2} {
+      padding-left: $i * 2px !important;
+    }
+    .pr-xl-#{$i*2} {
+      padding-right: $i * 2px !important;
+    }
+  }
+
+  @include windows-laptop {
+    .m-xl-#{$i*2} {
+      margin: $i * 2px !important;
+    }
+    .mx-xl-#{$i*2} {
+      margin-left: $i * 2px !important;
+      margin-right: $i * 2px !important;
+    }
+    .my-xl-#{$i*2} {
+      margin-top: $i * 2px !important;
+      margin-bottom: $i * 2px !important;
+    }
+    .mt-xl-#{$i*2} {
+      margin-top: $i * 2px !important;
+    }
+    .mb-xl-#{$i*2} {
+      margin-bottom: $i * 2px !important;
+    }
+    .ml-xl-#{$i*2} {
+      margin-left: $i * 2px !important;
+    }
+    .mr-xl-#{$i*2} {
+      margin-right: $i * 2px !important;
+    }
+    .p-xl-#{$i*2} {
+      padding: $i * 2px !important;
+    }
+    .px-xl-#{$i*2} {
+      padding-left: $i * 2px !important;
+      padding-right: $i * 2px !important;
+    }
+    .py-xl-#{$i*2} {
+      padding-top: $i * 2px !important;
+      padding-bottom: $i * 2px !important;
+    }
+    .pt-xl-#{$i*2} {
+      padding-top: $i * 2px !important;
+    }
+    .pb-xl-#{$i*2} {
+      padding-bottom: $i * 2px !important;
+    }
+    .pl-xl-#{$i*2} {
+      padding-left: $i * 2px !important;
+    }
+    .pr-xl-#{$i*2} {
+      padding-right: $i * 2px !important;
+    }
+  }
+
+  @include tab-landscape {
+    .m-lg-#{$i*2} {
+      margin: $i * 2px !important;
+    }
+    .mx-lg-#{$i*2} {
+      margin-left: $i * 2px !important;
+      margin-right: $i * 2px !important;
+    }
+    .my-lg-#{$i*2} {
+      margin-top: $i * 2px !important;
+      margin-bottom: $i * 2px !important;
+    }
+    .mt-lg-#{$i*2} {
+      margin-top: $i * 2px !important;
+    }
+    .mb-lg-#{$i*2} {
+      margin-bottom: $i * 2px !important;
+    }
+    .ml-lg-#{$i*2} {
+      margin-left: $i * 2px !important;
+    }
+    .mr-lg-#{$i*2} {
+      margin-right: $i * 2px !important;
+    }
+    .p-lg-#{$i*2} {
+      padding: $i * 2px !important;
+    }
+    .px-lg-#{$i*2} {
+      padding-left: $i * 2px !important;
+      padding-right: $i * 2px !important;
+    }
+    .py-lg-#{$i*2} {
+      padding-top: $i * 2px !important;
+      padding-bottom: $i * 2px !important;
+    }
+    .pt-lg-#{$i*2} {
+      padding-top: $i * 2px !important;
+    }
+    .pb-lg-#{$i*2} {
+      padding-bottom: $i * 2px !important;
+    }
+    .pl-lg-#{$i*2} {
+      padding-left: $i * 2px !important;
+    }
+    .pr-lg-#{$i*2} {
+      padding-right: $i * 2px !important;
+    }
+  }
+
+  @include tab-portrait {
+    .m-md-#{$i*2} {
+      margin: $i * 2px !important;
+    }
+    .mx-md-#{$i*2} {
+      margin-left: $i * 2px !important;
+      margin-right: $i * 2px !important;
+    }
+    .my-md-#{$i*2} {
+      margin-top: $i * 2px !important;
+      margin-bottom: $i * 2px !important;
+    }
+    .mt-md-#{$i*2} {
+      margin-top: $i * 2px !important;
+    }
+    .mb-md-#{$i*2} {
+      margin-bottom: $i * 2px !important;
+    }
+    .ml-md-#{$i*2} {
+      margin-left: $i * 2px !important;
+    }
+    .mr-md-#{$i*2} {
+      margin-right: $i * 2px !important;
+    }
+    .p-md-#{$i*2} {
+      padding: $i * 2px !important;
+    }
+    .px-md-#{$i*2} {
+      padding-left: $i * 2px !important;
+      padding-right: $i * 2px !important;
+    }
+    .py-md-#{$i*2} {
+      padding-top: $i * 2px !important;
+      padding-bottom: $i * 2px !important;
+    }
+    .pt-md-#{$i*2} {
+      padding-top: $i * 2px !important;
+    }
+    .pb-md-#{$i*2} {
+      padding-bottom: $i * 2px !important;
+    }
+    .pl-md-#{$i*2} {
+      padding-left: $i * 2px !important;
+    }
+    .pr-md-#{$i*2} {
+      padding-right: $i * 2px !important;
+    }
+  }
+
+  @include tab-sm-portrait {
+    .m-sm-#{$i*2} {
+      margin: $i * 2px !important;
+    }
+    .mx-sm-#{$i*2} {
+      margin-left: $i * 2px !important;
+      margin-right: $i * 2px !important;
+    }
+    .my-sm-#{$i*2} {
+      margin-top: $i * 2px !important;
+      margin-bottom: $i * 2px !important;
+    }
+    .mt-sm-#{$i*2} {
+      margin-top: $i * 2px !important;
+    }
+    .mb-sm-#{$i*2} {
+      margin-bottom: $i * 2px !important;
+    }
+    .ml-sm-#{$i*2} {
+      margin-left: $i * 2px !important;
+    }
+    .mr-sm-#{$i*2} {
+      margin-right: $i * 2px !important;
+    }
+    .p-sm-#{$i*2} {
+      padding: $i * 2px !important;
+    }
+    .px-sm-#{$i*2} {
+      padding-left: $i * 2px !important;
+      padding-right: $i * 2px !important;
+    }
+    .py-sm-#{$i*2} {
+      padding-top: $i * 2px !important;
+      padding-bottom: $i * 2px !important;
+    }
+    .pt-sm-#{$i*2} {
+      padding-top: $i * 2px !important;
+    }
+    .pb-sm-#{$i*2} {
+      padding-bottom: $i * 2px !important;
+    }
+    .pl-sm-#{$i*2} {
+      padding-left: $i * 2px !important;
+    }
+    .pr-sm-#{$i*2} {
+      padding-right: $i * 2px !important;
+    }
+  }
+
+  @include mobile-lg {
+    .m-xs-#{$i*2} {
+      margin: $i * 2px !important;
+    }
+    .mx-xs-#{$i*2} {
+      margin-left: $i * 2px !important;
+      margin-right: $i * 2px !important;
+    }
+    .my-xs-#{$i*2} {
+      margin-top: $i * 2px !important;
+      margin-bottom: $i * 2px !important;
+    }
+    .mt-xs-#{$i*2} {
+      margin-top: $i * 2px !important;
+    }
+    .mb-xs-#{$i*2} {
+      margin-bottom: $i * 2px !important;
+    }
+    .ml-xs-#{$i*2} {
+      margin-left: $i * 2px !important;
+    }
+    .mr-xs-#{$i*2} {
+      margin-right: $i * 2px !important;
+    }
+    .p-xs-#{$i*2} {
+      padding: $i * 2px !important;
+    }
+    .px-xs-#{$i*2} {
+      padding-left: $i * 2px !important;
+      padding-right: $i * 2px !important;
+    }
+    .py-xs-#{$i*2} {
+      padding-top: $i * 2px !important;
+      padding-bottom: $i * 2px !important;
+    }
+    .pt-xs-#{$i*2} {
+      padding-top: $i * 2px !important;
+    }
+    .pb-xs-#{$i*2} {
+      padding-bottom: $i * 2px !important;
+    }
+    .pl-xs-#{$i*2} {
+      padding-left: $i * 2px !important;
+    }
+    .pr-xs-#{$i*2} {
+      padding-right: $i * 2px !important;
+    }
+  }
+
+  @include android-mobile {
+    .m-xxs-#{$i*2} {
+      margin: $i * 2px !important;
+    }
+    .mx-xxs-#{$i*2} {
+      margin-left: $i * 2px !important;
+      margin-right: $i * 2px !important;
+    }
+    .my-xxs-#{$i*2} {
+      margin-top: $i * 2px !important;
+      margin-bottom: $i * 2px !important;
+    }
+    .mt-xxs-#{$i*2} {
+      margin-top: $i * 2px !important;
+    }
+    .mb-xxs-#{$i*2} {
+      margin-bottom: $i * 2px !important;
+    }
+    .ml-xxs-#{$i*2} {
+      margin-left: $i * 2px !important;
+    }
+    .mr-xxs-#{$i*2} {
+      margin-right: $i * 2px !important;
+    }
+    .p-xxs-#{$i*2} {
+      padding: $i * 2px !important;
+    }
+    .px-xxs-#{$i*2} {
+      padding-left: $i * 2px !important;
+      padding-right: $i * 2px !important;
+    }
+    .py-xxs-#{$i*2} {
+      padding-top: $i * 2px !important;
+      padding-bottom: $i * 2px !important;
+    }
+    .pt-xxs-#{$i*2} {
+      padding-top: $i * 2px !important;
+    }
+    .pb-xxs-#{$i*2} {
+      padding-bottom: $i * 2px !important;
+    }
+    .pl-xxs-#{$i*2} {
+      padding-left: $i * 2px !important;
+    }
+    .pr-xxs-#{$i*2} {
+      padding-right: $i * 2px !important;
+    }
+  }
+}
+
+::placeholder {
+  color: $content-color-light;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: $content-color-light;
+}
+
+::-ms-input-placeholder {
+  color: $content-color-light;
+}
+
+@mixin input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid $input-bg;
+  background-color: $input-bg;
+  padding: 0 20px;
+  border-radius: 8px !important;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 16px !important;
+  line-height: 28px !important;
+  font-weight: normal !important;
+  font-family: $primary-font !important;
+  letter-spacing: -0.02em;
+  color: $content-color;
+  transition: 0.3s ease-in-out;
+  outline: none;
+  position: relative;
+}
+
+@mixin lists {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    margin-bottom: 0px;
+  }
+}
+
+@mixin input-focus {
+  color: $content-color !important;
+}
+
+@mixin transitionEffect {
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}

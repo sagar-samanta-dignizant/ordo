@@ -1,0 +1,12 @@
+.notification-card {
+  .card-content-info h5 {
+    color: $content-color;
+  }
+}
+
+.read-notification {
+  border: 1px solid $green-40;
+  .card-content-info h5 {
+    color: $secondary-dark-grey;
+  }
+}

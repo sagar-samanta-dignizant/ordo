@@ -1,0 +1,140 @@
+// responsive devices
+
+$desktop-lg: '(min-width: 1920px)';
+$macbook: '(min-width: 1367px) and (max-width: 1600px)';
+$windows-laptop: '(min-width: 1201px) and (max-width: 1366px)';
+$tab-lg: '(min-width: 1201px) and (max-width: 1366px) and (min-height: 880px)';
+$tab-landscape: '(max-width: 1200px)';
+$tab-lg-portrait: '(min-width: 1024px) and (max-width: 1200px) and (orientation: portrait)';
+$tab-portrait: '(max-width: 991px)';
+$tab-sm-portrait: '(max-width: 767px)';
+$mobile-lg: '(max-width: 575px)';
+$mobile-sm-portrait: '(max-width: 410px)';
+$iphone-old: '(max-width: 410px) and (max-height: 600px)';
+$android-mobile: '(max-width: 360px)';
+$iphone-vs: '(max-width: 320px)';
+
+// ============ Fonts Variable ============ //
+
+$primary-font: 'Inter', sans-serif;
+
+$font-14px-20px-400: 400 14px/20px $primary-font;
+$font-14px-22px-400: 400 14px/22px $primary-font;
+$font-14px-24px-400: 400 14px/24px $primary-font;
+$font-14px-17px-500: 500 14px/17px $primary-font;
+$font-14px-18px-500: 500 14px/18px $primary-font;
+$font-14px-20px-500: 500 14px/20px $primary-font;
+
+$font-16px-24px-400: 400 16px/24px $primary-font;
+$font-16px-26px-400: 400 16px/26px $primary-font;
+$font-16px-28px-400: 400 16px/28px $primary-font;
+$font-16px-24px-500: 500 16px/24px $primary-font;
+$font-16px-28px-500: 500 16px/28px $primary-font;
+
+$footnote-12px-16px: 400 12px/16px $primary-font;
+$footnote-400: 400 13px/17px $primary-font;
+$footnote-500: 500 13px/17px $primary-font;
+
+$hammerhead: 700 12px/16px $primary-font;
+$hammerhead-sm: 600 12px/16px $primary-font;
+
+// ============ Color Variable ============ //
+
+$page-bg: #eff0f1;
+$primary-green: #07a279;
+$primary-dark-green: #094D4D;
+$primary-yellow: #fcce00;
+$secondary-dark-grey: #001921;
+$yellow-color: #ffc123;
+$salomon-pink: #ff9891;
+$blue-color: #1890ff;
+$green-color: #2cbd53;
+$red-color: #e11900;
+$heading-color: #303b45;
+$content-color: #57616a;
+$content-color-light: #99a2ab;
+$border-color: #e4e6e8;
+$input-bg: #f4f5f6;
+$light-grey: #f7f8f9;
+
+$alert-red: #ea4335;
+$alert-green: #20ac87;
+// $alert-yellow:#D69F11;
+$alert-yellow: #ffa216;
+$alert-blue: #1c7bd2;
+$status-yellow: #fbbc05;
+$status-blue: #4285f4;
+
+$gradiant-green-dt-lb: linear-gradient(180deg, #037d5d 0%, #07a279 100%);
+$gradiant-green-lt-db: linear-gradient(180deg, #07a279 0%, #037d5d 100%);
+$gradiant-green-ll-dr: linear-gradient(90deg, #07a279 0%, #037d5d 100%);
+$gradiant-green-dl-lr: linear-gradient(90deg, #037d5d 0%, #07a279 100%);
+$gradiant-green-dlt-lrb: linear-gradient(
+  308.66deg,
+  #07a279 5.25%,
+  #037d5d 94.14%
+);
+$gradiant-green-llt-drb: linear-gradient(
+  308.66deg,
+  #037d5d 5.25%,
+  #07a279 94.14%
+);
+$gradiant-green-drt-llb: linear-gradient(
+  231.34deg,
+  #037d5d 5.26%,
+  #07a279 94.15%
+);
+
+// Shade Variable
+
+///// Primary Green Shades
+
+$green-130: #037d5d;
+$green-120: #068463;
+$green-110: #06936e;
+$green-100: #07a279;
+$green-90: #20ac87;
+$green-80: #39b594;
+$green-70: #52bea2;
+$green-60: #6ac7af;
+$green-50: #83d1bc;
+$green-40: #9cdac9;
+$green-30: #b5e4d7;
+$green-20: #cdece4;
+$green-15: #daf1eb;
+$green-10: #e7f6f2;
+$green-8: #f0faf7;
+$green-6: #f5fbfa;
+
+///// Primary Drak Grey Shades
+
+$dark-grey-100: $secondary-dark-grey;
+$dark-grey-90: #00192190;
+$dark-grey-80: #00192180;
+$dark-grey-70: #00192170;
+$dark-grey-60: #00192160;
+$dark-grey-50: #00192150;
+$dark-grey-40: #00192140;
+$dark-grey-30: #00192130;
+$dark-grey-20: #00192120;
+$dark-grey-15: #00192115;
+$dark-grey-10: #00192110;
+$dark-grey-5: #00192105;
+
+///// White Shades
+
+$white-100: #ffffff;
+$white-90: #ffffff90;
+$white-80: #ffffff80;
+$white-70: #ffffff70;
+$white-60: #ffffff60;
+$white-50: #ffffff50;
+$white-40: #ffffff40;
+$white-30: #ffffff30;
+$white-20: #ffffff20;
+$white-15: #ffffff15;
+$white-10: #ffffff10;
+$white-7: #ffffff07;
+$white-5: #ffffff05;
+
+$dark-1:#1E1E1E;

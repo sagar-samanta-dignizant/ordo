@@ -1,0 +1,11 @@
+.chart {
+  width: 100%;
+  min-height: 100% !important;
+}
+
+#chart6 {
+  .apexcharts-legend {
+    display: flex;
+    justify-content: space-between;
+  }
+}

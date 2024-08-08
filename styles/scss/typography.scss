@@ -1,0 +1,81 @@
+.heading-component {
+  p {
+    font: $font-16px-24px-400;
+  }
+}
+
+.h1-icon {
+  margin-bottom: 4px;
+  i {
+    width: 32px;
+    height: 32px;
+    top: 4px;
+    margin-right: 12px;
+    display: inline-flex;
+    position: relative;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.h2-icon {
+  margin-bottom: 4px;
+  i {
+    width: 28px;
+    height: 28px;
+    top: 4px;
+    display: inline-flex;
+    position: relative;
+    margin-right: 8px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.h3-icon {
+  margin-bottom: 4px;
+  i {
+    width: 24px;
+    height: 24px;
+    top: 5px;
+    display: inline-flex;
+    position: relative;
+    margin-right: 8px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.h4-icon {
+  margin-bottom: 2px;
+  i {
+    width: 20px;
+    height: 20px;
+    top: 4px;
+    display: inline-flex;
+    position: relative;
+    margin-right: 8px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.h5-icon {
+  margin-bottom: 2px;
+  i {
+    width: 18px;
+    height: 18px;
+    top: 4px;
+    margin-right: 6px;
+    display: inline-flex;
+    position: relative;
+    margin-right: 6px;
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,121 @@
+// COMPANY DETAILS PAGE START
+
+.company-select-card {
+  input[type='radio'] {
+    & + label {
+      padding: 16px !important;
+    }
+    & + label:before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: $border-color;
+      border: none;
+      border-radius: 50%;
+      left: 90%;
+      top: 50%;
+      transform: translate(-10%, -50%);
+    }
+
+    & + label:after {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 4.5px;
+      top: 4.5px;
+      width: 11px;
+      height: 9px;
+      background: url(/assets/images/checkbox-tick.svg) no-repeat center /
+        contain !important;
+      left: 91%;
+      top: 50%;
+      transform: translate(-10%, -50%);
+    }
+
+    &:checked + label:before {
+      background-color: $green-color !important;
+      border-color: $green-color;
+    }
+
+    &:checked + label:after {
+      display: block;
+    }
+  }
+}
+
+.payment-select-card {
+  input[type='radio'] {
+    & + label {
+      padding: 0px !important;
+    }
+
+    & + label:before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: $border-color;
+      border: none;
+      border-radius: 50%;
+      left: 94%;
+      top: 50%;
+      transform: translate(-6%, -50%);
+    }
+
+    & + label:after {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 4.5px;
+      top: 4.5px;
+      width: 11px;
+      height: 9px;
+      background: url(/assets/images/checkbox-tick.svg) no-repeat center /
+        contain !important;
+      left: 95%;
+      top: 50%;
+      transform: translate(-2%, -50%);
+    }
+
+    &:checked + label:before {
+      background-color: $green-color !important;
+      border-color: $green-color;
+    }
+
+    &:checked + label:after {
+      display: block;
+    }
+  }
+}
+
+.input-group-white {
+  textarea,
+  input[type='text'] {
+    background-color: white !important;
+
+    &:focus {
+      background-color: white !important;
+    }
+  }
+}
+
+// COMPANY DETAILS PAGE END
+
+// EDIT PROFILE PAGE START
+
+.add-card-heading {
+  font-size: 34px;
+  line-height: 41px;
+  letter-spacing: 0.37px;
+}
+
+.card-security {
+  gap: 20px;
+
+  .cvv-field {
+    max-width: 115px;
+  }
+}
+
+// EDIT PROFILE PAGE START

@@ -1,0 +1,47 @@
+.upay-payment-div {
+  width: "100%";
+  height: "100%";
+  position: relative;
+  z-index: 9999;
+
+  background: #f7f8f9;
+
+  border: 1px dashed rgba(0, 25, 33, 0.15);
+  border-radius: 10px;
+
+  box-sizing: border-box;
+  cursor: pointer;
+  /* Auto layout */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.digital_wallet_span {
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Inter";
+  line-height: 24px;
+}
+
+#uPay-p {
+  color: #008de7;
+  font-weight: 700;
+}
+
+#merchant-p {
+  color: #00199f;
+  font-weight: 700;
+}
+
+#digital-wallet-p {
+  color: #57616a;
+  font-weight: 700;
+}
+
+#uPay-icon-img {
+  padding-right: 10px;
+}

@@ -1,0 +1,16 @@
+.progress-count {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #fdedeb;
+  height: 55%;
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 55px;
+  font-weight: 600;
+  color: #ea4335;
+}

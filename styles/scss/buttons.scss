@@ -1,0 +1,43 @@
+// .easy-button{
+//   background: #FCCE00;
+//   border-radius: 8px;
+//   padding: 10px 16px;
+//   white-space: nowrap;
+//   color: #001921;
+//   font-family: Inter;
+//   font-weight: 600;
+//   b{
+//     font-family: Futura;
+//     font-weight: 700;
+//   }
+// }
+.easy-button{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 16px;
+gap: 10px;
+
+width: 143px;
+height: 40px;
+
+/* Primary Colours/Primary Yellow */
+background: #FCCE00;
+border-radius: 8px;
+
+
+font-family: 'Futura';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 19px;
+
+/* identical to box height */
+letter-spacing: -0.02em;
+
+/* Primary Colours/Primary BluishGrey */
+color: #001921;
+
+
+}

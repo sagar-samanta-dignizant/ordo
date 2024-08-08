@@ -1,0 +1,74 @@
+.loyalty-point-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: $light-grey;
+  border: 1px dashed rgba(0, 25, 33, 0.15);
+
+  .loyalty-progress-bar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    position: relative;
+    background-color: transparent;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      max-width: 22px;
+      max-height: 22px;
+    }
+
+    svg {
+      position: absolute;
+      inset: 0;
+    }
+  }
+
+  .loyalty-point-count {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.point-card-yellow {
+  border-color: $status-yellow;
+  background: rgba($color: $status-yellow, $alpha: 0.06);
+
+  strong {
+    color: $status-yellow;
+  }
+}
+
+.point-card-green {
+  border-color: $green-color;
+  background: rgba($color: $green-color, $alpha: 0.06);
+
+  strong {
+    color: $green-color;
+  }
+}
+
+.point-card-red {
+  border-color: $alert-red;
+  background: rgba($color: $alert-red, $alpha: 0.06);
+
+  strong {
+    color: $alert-red;
+  }
+}
+
+.coupon-card-head {
+  figure {
+    flex: none;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+  }
+}

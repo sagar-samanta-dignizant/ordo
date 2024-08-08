@@ -1,0 +1,56 @@
+.popover {
+  max-width: 320px;
+  padding: 12px 18px 15px;
+  background: #ffffff;
+  border-radius: 8px;
+  border: none;
+  font-family: $primary-font;
+
+  .popover-arrow {
+    &::before {
+      border-top-color: rgba(0, 0, 0, 0);
+      border-bottom-color: rgba(0, 0, 0, 0);
+      border-right-color: rgba(0, 0, 0, 0);
+      border-left-color: rgba(0, 0, 0, 0);
+    }
+  }
+
+  .popover-header {
+    padding: 0;
+    background: #ffffff;
+    border: none;
+    font-size: 18px;
+    line-height: 156%;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    margin-bottom: 3px;
+  }
+
+  .popover-body {
+    padding: 0;
+    p {
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      + .btn {
+        margin-left: 12px;
+      }
+    }
+  }
+}
+
+.bs-popover-top {
+  box-shadow: (0px 4px 12px rgba(0, 25, 33, 0.06));
+}
+
+.bs-popover-bottom {
+  box-shadow: (0px 4px 12px rgba(0, 25, 33, 0.06));
+}
+
+.bs-popover-end {
+  box-shadow: (0px 4px 12px rgba(0, 25, 33, 0.06));
+}
+.bs-popover-start {
+  box-shadow: (0px 4px 12px rgba(0, 25, 33, 0.06));
+}

@@ -1,0 +1,584 @@
+//================================== TABLE
+
+.table-responsive {
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0px 6px;
+  border-radius: 6px 6px;
+
+  thead {
+    tr {
+      background-color: white !important;
+
+      th {
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        color: $secondary-dark-grey;
+        padding: 18px 20px;
+
+        @include mobile-lg {
+          padding: 14px;
+        }
+      }
+    }
+  }
+
+  tr {
+    &:nth-of-type(odd) {
+      background-color: $light-grey;
+    }
+
+    &:nth-of-type(even) {
+      background-color: white;
+    }
+    td {
+      font-size: 13px;
+      line-height: 16px;
+      font-weight: 500;
+      letter-spacing: -0.015em;
+      color: $content-color;
+      padding: 20px;
+    }
+  }
+}
+
+//================================== pagination
+
+.pagination-wrapper {
+  .pagination {
+    margin-bottom: 0;
+  }
+
+  .page-link {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: $secondary-dark-grey;
+    min-width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 8px;
+    margin-right: 10px;
+    padding: 0 16px;
+    border: 0;
+
+    &:hover {
+      background-color: $primary-green;
+      color: white;
+    }
+  }
+
+  .page-item.active .page-link {
+    background: $primary-green;
+  }
+
+  .page-link:focus {
+    z-index: 3;
+    box-shadow: none;
+    outline: 0;
+  }
+
+  .page-item:first-child .page-link {
+    padding: 0 20px;
+    border-radius: 8px;
+    margin-right: 16px;
+    background-color: $secondary-dark-grey;
+    color: white;
+    &:hover {
+      background-color: $primary-green;
+    }
+
+    @include tab-sm-portrait {
+      font-size: 0px !important;
+      width: 40px;
+      height: 40px;
+      padding: 0 !important;
+      background: $secondary-dark-grey
+        url(/assets/images/icons/icon-previous-arrow.svg) no-repeat center /
+        contain;
+      background-size: 13px 13px;
+    }
+  }
+
+  .page-item:last-child .page-link {
+    padding: 0 20px;
+    border-radius: 8px;
+    margin-left: 6px;
+    margin-right: 0;
+    background-color: $secondary-dark-grey;
+    color: white;
+
+    &:hover {
+      background-color: $primary-green;
+    }
+
+    @include tab-sm-portrait {
+      font-size: 0px !important;
+      width: 40px;
+      height: 40px;
+      padding: 0 !important;
+      background: $secondary-dark-grey
+        url(/assets/images/icons/icon-previous-arrow.svg) no-repeat center /
+        contain;
+      background-size: 13px 13px;
+      transform: rotate(-180deg);
+    }
+  }
+
+  .page-item.disabled .page-link {
+    opacity: 0.6;
+  }
+}
+
+/* ============== Datatable ============== */
+
+table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control1 {
+  @include tab-sm-portrait {
+    padding-left: 50px;
+  }
+}
+
+table.dataTable {
+  width: 100% !important;
+  border-spacing: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 30px !important;
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
+
+  @include mobile-lg {
+    margin-bottom: 20px !important;
+  }
+
+  tr {
+    td {
+      padding: 20px;
+
+      @include mobile-lg {
+        padding: 14px;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.09);
+    border: 1px solid $border-color;
+    padding: 8px;
+    border-radius: 6px;
+    margin-top: 10px !important;
+    max-width: 130px;
+    li {
+      margin-bottom: 0px;
+    }
+    i {
+      margin-right: 12px;
+      width: 15px;
+      height: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    .dropdown-item {
+      font-size: 14px;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.dataTables_length,
+.dataTables_filter {
+  display: none;
+}
+
+// .listing-status {
+//     background-color: #dfdfdf;
+//     padding: 0px 12px;
+//     height: 24px;
+//     line-height: 24px;
+//     color: $content-color;
+//     text-transform: uppercase;
+//     font-weight: 500;
+//     font-size: 10px;
+//     letter-spacing: 1.15px;
+//     border-radius: 20px;
+//     display: inline-flex;
+//     align-items: center;
+//     &-active {
+//         background-color:red;
+//         color: red;
+//     }
+//     &-pending {
+//         background-color: red;
+//         color: red;
+//     }
+// }
+
+.dataTables_paginate {
+  padding-right: 30px;
+
+  .pagination {
+    row-gap: 10px;
+  }
+
+  .page-item {
+    margin-right: 10px;
+    margin-bottom: 0;
+
+    &:first-child {
+      margin-right: 16px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .page-link {
+      background: $light-grey;
+    }
+
+    &.active {
+      .page-link {
+        background-color: $primary-green;
+      }
+    }
+  }
+  .page-link {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: $secondary-dark-grey;
+    min-width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: white;
+    border-radius: 8px;
+    padding: 0 16px;
+    border: 0;
+
+    &:hover {
+      background: $primary-green;
+      color: white;
+    }
+
+    &:focus {
+      box-shadow: none !important;
+    }
+  }
+  .previous,
+  .next {
+    .page-link {
+      padding: 0 20px;
+      border-radius: 8px;
+      background-color: $secondary-dark-grey;
+      color: white;
+      @include mobile-lg {
+        font-size: 0px;
+        background-image: url(/assets/images/icons/btn-arrow-left-white.svg);
+        background-size: 13px 13px;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      &:hover {
+        background-color: $primary-green;
+        color: white;
+      }
+    }
+  }
+
+  .next {
+    margin-left: 6px;
+    @include mobile-lg {
+      font-size: 0px;
+      background: #f4f5f6 url(/assets/images/icon/previous-arrow.svg) no-repeat
+        center center;
+      transform: rotate(-180deg);
+    }
+  }
+
+  .disabled {
+    cursor: not-allowed;
+  }
+}
+
+.dataTables_wrapper {
+  .dataTables_info {
+    padding-left: 30px;
+    color: rgba($color: #000000, $alpha: 0.6);
+    font-size: 14px;
+    font-weight: 500;
+    @include tab-sm-portrait {
+      padding-left: 0;
+      padding-top: 0px !important;
+      padding-bottom: 15px !important;
+    }
+  }
+}
+
+.dataTable {
+  margin: 0px !important;
+  border: 0;
+}
+
+th.sorting {
+  &::after,
+  &::before {
+    display: none !important;
+  }
+  span {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 18px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      width: 8px;
+      height: 13px;
+      background: url(/assets/images/table/sorting.svg) no-repeat center /
+        contain;
+    }
+  }
+
+  &_asc {
+    span {
+      &::after {
+        background: url(/assets/images/table/sorting_asc.svg) no-repeat center /
+          contain;
+      }
+    }
+  }
+
+  &_desc {
+    span {
+      &::after {
+        background: url(/assets/images/table/sorting_dsc.svg) no-repeat center /
+          contain;
+      }
+    }
+  }
+}
+
+.listing-manage {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid $border-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  @include mobile-lg {
+    width: 25px;
+    height: 25px;
+  }
+  img {
+    @include mobile-lg {
+      width: 14px;
+    }
+  }
+  &::after {
+    display: none;
+  }
+}
+
+/* =========== Datatable responsive customization =========== */
+
+table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
+  content: '';
+  background: url(/assets/images/table/plus.svg) no-repeat center / contain;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  left: 22px;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+table.dataTable.dtr-inline.collapsed
+  > tbody
+  > tr.parent
+  > td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed
+  > tbody
+  > tr.parent
+  > th.dtr-control:before {
+  content: '';
+  background: url(/assets/images/table/minus.svg) no-repeat center / contain;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  left: 22px;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+table.dataTable > thead .sorting,
+table.dataTable > thead .sorting_asc,
+table.dataTable > thead .sorting_desc,
+table.dataTable > thead .sorting_asc_disabled,
+table.dataTable > thead .sorting_desc_disabled {
+  // padding: 20px !important;
+  // font-size: 15px;
+  // @include tab-portrait{
+  //     font-size: 14px !important;
+  // }
+  // @include tab-portrait{
+  //     padding: 10px !important;
+  // }
+}
+
+table.dataTable > tbody > tr.child ul.dtr-details {
+  width: 100%;
+  text-align: left;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr > td.child,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th.child,
+table.dataTable.dtr-inline.collapsed > tbody > tr > td.dataTables_empty {
+  padding: 0px 15px !important;
+}
+
+table.dataTable > tbody > tr.child ul.dtr-details > li:first-child {
+  padding-top: initial;
+}
+
+table.dataTable > tbody > tr.child ul.dtr-details > li {
+  padding: 12px 0px !important;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control:before {
+  margin-top: -7px;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr > td.dtr-control,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th.dtr-control {
+  padding-left: 50px !important;
+}
+
+///////////////////  data table search
+
+div.dataTables_wrapper div.dataTables_filter input {
+  width: 290px;
+  height: 40px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 30px !important;
+
+  &:focus {
+    background: white !important;
+    width: 290px;
+  }
+}
+
+div.dataTables_wrapper div.dataTables_length select {
+  width: 180px !important;
+  height: 40px !important;
+  appearance: none !important;
+  background-color: white !important;
+  border-color: transparent !important;
+  border-radius: 8px !important;
+  padding: 0 16px;
+  width: max-content;
+  background-image: url(/assets/images/select-caret-down.svg) !important;
+  background-size: 10px !important;
+  background-repeat: no-repeat !important;
+  background-position: right 16px center !important;
+}
+
+////////////////// table action
+.table-action {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px 30px;
+  border-top: 1px solid $border-color;
+
+  @include tab-sm-portrait {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  @include mobile-lg {
+    flex-direction: column;
+  }
+
+  input[type='search'] {
+    width: 282px;
+    height: 40px;
+    font-size: 14px !important;
+    line-height: 24px !important;
+    font-weight: 400 !important;
+    letter-spacing: -0.015em;
+    padding: 8px 16px !important;
+    color: $content-color !important;
+    background-image: url(/assets/images/table/search.svg);
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 16px;
+
+    @include tab-sm-portrait {
+      width: 230px;
+    }
+
+    @include mobile-lg {
+      width: 100%;
+    }
+  }
+
+  select {
+    font-size: 14px !important;
+    line-height: 24px !important;
+    font-weight: 400 !important;
+    letter-spacing: -0.015em;
+    padding: 8px 36px 8px 16px !important;
+    width: 180px;
+    height: 40px;
+    color: $content-color !important;
+    background-image: url(/assets/images/dashboard/select-arrow-2.svg) !important;
+    flex: none !important;
+
+    @include mobile-lg {
+      width: 100%;
+    }
+  }
+
+  .data-search {
+    position: relative;
+
+    input[type='submit'] {
+      background: url(/assets/images/table/search.svg) no-repeat !important;
+      width: 14px;
+      height: 16px;
+      top: 14px;
+      right: 12px;
+      border: none;
+      position: absolute;
+      display: inline-block;
+      padding: 0 !important;
+    }
+  }
+}
